@@ -1,0 +1,19 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// 2:1 Multiplexer
+
+// Author: Rohan Tammara
+// Last Modified: 2/4/19
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module mux_2to1(
+    input [31:0] A,
+    input [31:0] B,
+    input select,
+    output [31:0] out
+    );
+    
+    assign out = select ? A:B;
+    
+endmodule
